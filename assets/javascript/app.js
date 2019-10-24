@@ -11,52 +11,52 @@ $(document).ready(function () {
         question: "What is the name of the fictional town where Stanger Things takes place?",
         answer: ["Storybrooke", "Hawkins", "Derry", "Arnette"],
         correct: "1",
-        image: ("<insert image here>")
+        image: ("assets/images/hawkins.jpg")
     }, {
         question: "What is the game that the boys are always playing?",
         answer: ["Super Mario Bros", "Legend of Zelda", "Dig Dug", "Dungeons & Dragons"],
         correct: "3",
-        image: ("<insert image here>")
+        image: ("assets/images/DD.jpg")
     }, {
         question: "What is the name of the young girl who escapes from Hawkins Lab? ",
         answer: ["Eight", "Millie", "Eleven", "Nancy"],
         correct: "2",
-        image: ("<insert image here>")
+        image: ("assets/images/eleven.jpg")
     }, {
         question: "Which one of the boys goes missing in the beginning of the series?",
         answer: ["Will", "Dustin", "Mike", "Lucas"],
         correct: "0",
-        image: ("<insert image here>")
+        image: ("assets/images/will.jpg")
     }, {
         question: "What is the name of the police officer trying to find Will? ",
         answer: ["Byers", "Hopper", "Clarke", "Callahan"],
         correct: "1",
-        image: ("<insert image here>")
+        image: ("assets/images/hopper.jpg")
     }, {
         question: "What is Eleven's superpower?",
         answer: ["Telepathy", "Mind Control", "Shape Shifting", "telekinesis"],
         correct: "3",
-        image: ("<insert image here>")
+        image: ("assets/images/eleven2.jpg")
     }, {
         question: "How does Joyce Byers communicate with her son, Will?",
         answer: ["Telephone", "Alphabet Magents", "Christmas Lights", "Morse Code"],
         correct: "2",
-        image: ("<insert image here>")
+        image: ("assets/images/joyce.jpg")
     }, {
         question: "What do the boys name the faceless creature terrorizing their town?",
         answer: ["The Thing", "The Monster", "Demogorgon", "Godzilla"],
         correct: "2",
-        image: ("<insert image here>")
+        image: ("assets/images/demogorgon.jpg")
     }, {
         question: "Who kills the Demogorgon at the end of season 1?",
         answer: ["Will", "Eleven", "Steve", "Hopper"],
         correct: "1",
-        image: ("<insert image here>")
+        image: ("assets/images/elevendemogorgan.jpg")
     }, {
         question: "What is Eleven's favorite food?",
         answer: ["Oreos", "Pop-Tarts", "Twinkies", "Eggos"],
         correct: "3",
-        image: ("<insert image here>")
+        image: ("assets/images/eleveneggos.jpg")
 
     }];
 
@@ -107,19 +107,19 @@ $(document).ready(function () {
         if (timeRemaining === 0) {
             answered = true;
             clearInterval(intervalID);
-            $('.question').text("THE CORRECT ANSWER IS: " + triviaGame[indexQandA].answer[correct]);
+            $('.question').text("The correct answer is: " + triviaGame[indexQandA].answer[correct]);
             unAnswered();
         } else if (answered === true) {
             clearInterval(intervalID);
         } else {
             timeRemaining--;
-            $('.timeRemaining').text('YOU HAVE ' + timeRemaining + ' SECONDS TO CHOOSE');
+            $('.timeRemaining').text('You have ' + timeRemaining + 'seconds to choose');
         }
     }
 
     function correctAnswer() {
         correctAnswers++;
-        $('.timeRemaining').text("YOU HAVE ANSWERED CORRECTLY!").css({
+        $('.timeRemaining').text("You answered correctly!").css({
             'color': '#3D414F'
         });
         resetRound();
@@ -127,7 +127,7 @@ $(document).ready(function () {
 
     function incorrectAnswer() {
         incorrectAnswers++;
-        $('.timeRemaining').text("YOU HAVE ANSWERED INCORRECTLY!").css({
+        $('.timeRemaining').text("You answered incorrectly!").css({
             'color': '#3D414F'
         });
         resetRound();
@@ -136,35 +136,11 @@ $(document).ready(function () {
 
     function unAnswered() {
         unansweredQuestions++;
-        $('.timeRemaining').text("YOU FAILED TO CHOOSE AN ANSWER").css({
+        $('.timeRemaining').text("You didn't choose an answer").css({
             'color': '#3D414F'
         });
         resetRound();
     }
-
-    // function resetRound() {
-    //     $('.answersAll').remove();
-    //     $('.answers').append('<img class=answerImage width="150" height="150" src="' + triviaGame[indexQandA].image + ' ">'); // adds answer image
-    //     indexQandA++; // increments index which will load next question when loadQandA() is called again
-    //     if (indexQandA < triviaGame.length) {
-    //         setTimeout(function () {
-    //             loadQandA();
-    //             $('.answerImage').remove();
-    //         }, 5000); // removes answer image from previous round
-    //     } else {
-    //         setTimeout(function () {
-    //             $('.question').remove();
-    //             $('.timeRemaining').remove();
-    //             $('.answerImage').remove();
-    //             $('.answers').append('<h4 class= answersAll end>CORRECT ANSWERS: ' + correctAnswers + '</h4>');
-    //             $('.answers').append('<h4 class= answersAll end>INCORRECT ANSWERS: ' + incorrectAnswers + '</h4>');
-    //             $('.answers').append('<h4 class= answersAll end>UNANSWERED QUESTIONS: ' + unansweredQuestions + '</h4>');
-    //             setTimeout(function () {
-    //                 location.reload();
-    //             }, 7000);
-    //         }, 5000);
-    //     }
-    };
 
     $('.startButton').on("click", function () {
         $('.startButton');
