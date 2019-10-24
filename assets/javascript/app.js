@@ -11,52 +11,52 @@ $(document).ready(function () {
         question: "What is the name of the fictional town where Stanger Things takes place?",
         answer: ["Storybrooke", "Hawkins", "Derry", "Arnette"],
         correct: "1",
-        image: ("assets/images/hawkins.jpg")
+        image: ("../TriviaGame/assets/images/images/hawkins.jpg")
     }, {
         question: "What is the game that the boys are always playing?",
         answer: ["Super Mario Bros", "Legend of Zelda", "Dig Dug", "Dungeons & Dragons"],
         correct: "3",
-        image: ("assets/images/DD.jpg")
+        image: ("../TriviaGame/assets/images/images/DD.jpg")
     }, {
         question: "What is the name of the young girl who escapes from Hawkins Lab? ",
         answer: ["Eight", "Millie", "Eleven", "Nancy"],
         correct: "2",
-        image: ("assets/images/eleven.jpg")
+        image: ("../TriviaGame/assets/images/images/eleven.jpg")
     }, {
         question: "Which one of the boys goes missing in the beginning of the series?",
         answer: ["Will", "Dustin", "Mike", "Lucas"],
         correct: "0",
-        image: ("assets/images/will.jpg")
+        image: ("../TriviaGame/assets/images/images/will.jpg")
     }, {
         question: "What is the name of the police officer trying to find Will? ",
         answer: ["Byers", "Hopper", "Clarke", "Callahan"],
         correct: "1",
-        image: ("assets/images/hopper.jpg")
+        image: ("../TriviaGame/assets/images/images/hopper.jpg")
     }, {
         question: "What is Eleven's superpower?",
         answer: ["Telepathy", "Mind Control", "Shape Shifting", "telekinesis"],
         correct: "3",
-        image: ("assets/images/eleven2.jpg")
+        image: ("../TriviaGame/assets/images/images/eleven2.jpg")
     }, {
         question: "How does Joyce Byers communicate with her son, Will?",
         answer: ["Telephone", "Alphabet Magents", "Christmas Lights", "Morse Code"],
         correct: "2",
-        image: ("assets/images/joyce.jpg")
+        image: ("../TriviaGame/assets/images/images/joyce.jpg")
     }, {
         question: "What do the boys name the faceless creature terrorizing their town?",
         answer: ["The Thing", "The Monster", "Demogorgon", "Godzilla"],
         correct: "2",
-        image: ("assets/images/demogorgon.jpg")
+        image: ("../TriviaGame/assets/images/images/demogorgon.jpg")
     }, {
         question: "Who kills the Demogorgon at the end of season 1?",
         answer: ["Will", "Eleven", "Steve", "Hopper"],
         correct: "1",
-        image: ("assets/images/elevendemogorgan.jpg")
+        image: ("../TriviaGame/assets/images/images/elevendemogorgan.jpg")
     }, {
         question: "What is Eleven's favorite food?",
         answer: ["Oreos", "Pop-Tarts", "Twinkies", "Eggos"],
         correct: "3",
-        image: ("assets/images/eleveneggos.jpg")
+        image: ("../TriviaGame/assets/images/images/eleveneggos.jpg")
 
     }];
 
