@@ -90,15 +90,14 @@ $(document).ready(function () {
         }
         
         $("h4").click(function () {
-            let id = $(this).attr('id');
+            var id = $(this).attr('id');
             if (id === correct) {
                 answered = true; // stops the timer
-                $('.picture').append(`<img src="${triviaGame[indexQandA].image}"/>`);
-                $('.question').text("Good job! You got it right!: " + triviaGame[indexQandA].answer[correct]);
+                $('.question').text("Good job! You git it right!: " + triviaGame[indexQandA].answer[correct]);
                 correctAnswer();
             } else {
                 answered = true; //stops the timer
-                $('.question').text("Oh no, wrong answer!: " + triviaGame[indexQandA].answer[id] + "Correct Answer: " + triviaGame[indexQandA].answer[correct]);
+                $('.question').text("Oh no, wrong answer!: " + triviaGame[indexQandA].answer[id] + ".....HOWEVER THE ANSWER IS: " + triviaGame[indexQandA].answer[correct]);
                 incorrectAnswer();
             }
         });
@@ -109,7 +108,7 @@ $(document).ready(function () {
         if (timeRemaining === 0) {
             answered = true;
             clearInterval(intervalID);
-            $('.question').text("Good job! You guessed correctly!: " + triviaGame[indexQandA].answer[correct]);
+            $('.question').text("Good job! You got it right!: " + triviaGame[indexQandA].answer[correct]);
             unAnswered();
         } else if (answered === true) {
             clearInterval(intervalID);
