@@ -1,0 +1,16 @@
+#jumbotron {
+    background-color: black;
+    }
+
+body {
+    background-image: url("../images/images/back1.jpg");
+    background-size: cover;
+}
+
+h1 {
+    color: #cc1618!Important;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+   
+}
+
