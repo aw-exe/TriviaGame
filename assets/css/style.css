@@ -2,6 +2,18 @@
     background-color: black;
     }
 
+#timeRemaining {
+    color: #cc1618!Important;
+}
+
+#questions {
+    color: #cc1618!Important;
+}
+
+#answers {
+    color: #cc1618!Important;
+}
+
 body {
     background-image: url("../images/images/back1.jpg");
     background-size: cover;
@@ -10,7 +22,7 @@ body {
 h1 {
     color: #cc1618!Important;
     font-family: 'Permanent Marker', cursive;
-    text-align: center;
-   
+    text-align: center;  
 }
+
 
